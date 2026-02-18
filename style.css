@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#902626;
+    color:#222;
+}
+
+/* Sidebar */
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:220px;
+    height:100%;
+    padding:40px 20px;
+    background:#c3bdbd;
+
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:20px 0;
+}
+
+.sidebar ul li a{
+    text-decoration:none;
+    color:#000;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.sidebar ul li a:hover{
+    color:#fc0101;
+}
+
+/* Main */
+.main{
+    margin-left:220px;
+    padding:50px;
+}
+
+/* Hero */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#c3bdbd;
+    padding:40px;
+    border-radius:10px;
+    margin-bottom:40px;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero-text span{
+    color:#f70000;
+}
+
+.hero img{
+    width:250px;
+    border-radius:10px;
+}
+
+/* About */
+.about{
+    background:#c3bdbd;
+    padding:40px;
+    border-radius:10px;
+    margin-bottom:40px;
+}
+
+.stats{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
+
+.stat-box{
+    flex:1;
+    background:#111;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+    border-radius:8px;
+}
+
+.stat-box h2{
+    color:#f50c0c;
+}
+
+/* Portfolio */
+.portfolio{
+    background:#c3bdbd;
+    padding:40px;
+    border-radius:10px;
+    margin-bottom:40px;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.portfolio-item{
+    overflow:hidden;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.portfolio-item img{
+    width:100%;
+    transition:0.4s;
+}
+
+.portfolio-item:hover img{
+    transform:scale(1.1);
+}
+
+/* Testimonial */
+.testimonial{
+    background:#c3bdbd;
+    padding:40px;
+    border-radius:10px;
+    margin-bottom:40px;
+}
+
+/* Contact */
+.contact{
+    background:#c3bdbd;
+    padding:40px;
+    border-radius:10px;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    background:#cfcecb;
+    border:none;
+    padding:12px;
+    font-weight:600;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.contact button:hover{
+    background:#111;
+    color:#fff;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+        text-align:center;
+    }
+
+    .main{
+        margin-left:0;
+        padding:20px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
